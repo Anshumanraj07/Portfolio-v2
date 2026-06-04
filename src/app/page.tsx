@@ -80,8 +80,8 @@ export default function Home() {
           </div>
 
           <div className="border-t border-glassBorder pt-6 flex justify-between items-center text-xs font-mono text-white drop-shadow-md pointer-events-none">
-            <span>[ SCROLL TO DISCOVER ]</span>
-            <span>CS & AI UNDERGRAD @CUAP</span>
+            
+            <span>[CS & AI UNDERGRAD @CUAP]</span>
           </div>
         </div>
       </section>
