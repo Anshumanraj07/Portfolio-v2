@@ -51,15 +51,6 @@ export default function Home() {
               software that leverages generative models to orchestrate complex digital workflows, 
               converting unstructured natural language into structured, predictable data models.
             </motion.p>
-            {/* ... purana paragraph code ... */}
-            <motion.p 
-              className="text-zinc-300 text-base md:text-lg font-normal leading-relaxed drop-shadow-md"
-              {...fadeInUp}
-            >
-              Transitioning prompt intelligence into deterministic, automated pipelines. I design 
-              software that leverages generative models to orchestrate complex digital workflows, 
-              converting unstructured natural language into structured, predictable data models.
-            </motion.p>
             
             {/* NAYA RESUME BUTTON YAHAN ADD KARO */}
             <motion.div 
@@ -96,10 +87,33 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* CHITRAGUPTA 2.0 - MOVED TO FIRST POSITION */}
+            <motion.div className="space-y-6 group" {...fadeInUp}>
+              <div className="p-8 bg-zinc-900/30 border border-glassBorder rounded-none backdrop-blur-sm transition-all duration-300 group-hover:border-zinc-700">
+                <span className="font-mono text-xs text-muted block mb-2">CASE 01 // DEPLOYED AGENT</span>
+                <h4 className="text-2xl font-normal tracking-tight mb-4">ChitraGupta 2.0: Agentic AI Coaching Platform</h4>
+                <p className="text-muted text-sm leading-relaxed mb-6">
+                  An autonomous AI coaching platform combining deterministic policy-based decision-making with 
+                  multi-provider LLM routing. Features 8 intelligence layers (policy engine, confidence tracking, 
+                  identity modeling, 34 behavioral patterns, adaptive coaching, reasoning-driven tasks, 
+                  context-aware memory, structured reflection) with real-time analytics dashboard.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {['FastAPI', 'Next.js 16', 'React 19', 'Tailwind 4', 'Supabase', 'pgvector', 'Groq', 'Gemini', 'Mistral', 'OpenRouter', 'Cloudflare'].map((tech) => (
+                    <span key={tech} className="font-mono text-[10px] bg-zinc-900 px-2 py-1 text-zinc-400 border border-glassBorder">{tech}</span>
+                  ))}
+                </div>
+                <div className="flex gap-4 font-mono text-xs">
+                  <a href="https://chitra-gupta-2-0.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">↗ Live System</a>
+                  <a href="https://github.com/Anshumanraj07/ChitraGupta-2.0" target="_blank" rel="noreferrer" className="text-muted hover:text-white transition-colors">↗ Repository</a>
+                </div>
+              </div>
+            </motion.div>
+
             {/* VAANI */}
             <motion.div className="space-y-6 group" {...fadeInUp}>
               <div className="p-8 bg-zinc-900/30 border border-glassBorder rounded-none backdrop-blur-sm transition-all duration-300 group-hover:border-zinc-700">
-                <span className="font-mono text-xs text-muted block mb-2">CASE 01 // DEPLOYED MVP</span>
+                <span className="font-mono text-xs text-muted block mb-2">CASE 02 // DEPLOYED MVP</span>
                 <h4 className="text-2xl font-normal tracking-tight mb-4">Vaani: Cognitive Diagnostic Dashboard</h4>
                 <p className="text-muted text-sm leading-relaxed mb-6">
                   A cloud-native digital biomarker tracking system analyzing kinematic interactions and speech 
@@ -107,35 +121,13 @@ export default function Home() {
                   to eliminate infrastructure costs completely.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {['Next.js', 'FastAPI', 'LlamaIndex', 'Groq Whisper', 'Supabase'].map((tech) => (
+                  {['Next.js', 'FastAPI', 'LlamaIndex', 'Groq Whisper', 'Supabase', 'Pinecone'].map((tech) => (
                     <span key={tech} className="font-mono text-[10px] bg-zinc-900 px-2 py-1 text-zinc-400 border border-glassBorder">{tech}</span>
                   ))}
                 </div>
                 <div className="flex gap-4 font-mono text-xs">
                   <a href="https://vaani-sepia.vercel.app/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">↗ Live System</a>
                   <a href="https://github.com/Anshumanraj07/Vaani" target="_blank" rel="noreferrer" className="text-muted hover:text-white transition-colors">↗ Repository</a>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* CHITRAGUPTA */}
-            <motion.div className="space-y-6 group" {...fadeInUp}>
-              <div className="p-8 bg-zinc-900/30 border border-glassBorder rounded-none backdrop-blur-sm transition-all duration-300 group-hover:border-zinc-700">
-                <span className="font-mono text-xs text-muted block mb-2">CASE 02 // DEPLOYED AGENT</span>
-                <h4 className="text-2xl font-normal tracking-tight mb-4">ChitraGupta 2.0: Autonomous Assistant</h4>
-                <p className="text-muted text-sm leading-relaxed mb-6">
-                  An autonomous routing system converting unstructured thought patterns into strict JSON-enforced 
-                  action items and data-driven journal logs via Groq Llama-3.1. Features an analytical execution matrix 
-                  guarded by Supabase Row-Level Security.
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {['Python', 'FastAPI', 'Groq API', 'Supabase RLS', 'Telegram API'].map((tech) => (
-                    <span key={tech} className="font-mono text-[10px] bg-zinc-900 px-2 py-1 text-zinc-400 border border-glassBorder">{tech}</span>
-                  ))}
-                </div>
-                <div className="flex gap-4 font-mono text-xs">
-                  <a href="https://chitragupta-2-0.onrender.com/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">↗ Live System</a>
-                  <a href="https://github.com/Anshumanraj07/ChitraGupta-2.0" target="_blank" rel="noreferrer" className="text-muted hover:text-white transition-colors">↗ Repository</a>
                 </div>
               </div>
             </motion.div>
@@ -155,7 +147,7 @@ export default function Home() {
             </div>
             <div className="p-6 bg-zinc-900/20 border border-glassBorder hover:border-zinc-700 transition-colors">
               <h4 className="font-mono text-xs text-muted mb-3 uppercase">// Infrastructure</h4>
-              <p className="text-sm tracking-tight text-zinc-300">FastAPI, Supabase (PostgreSQL), REST APIs, Docker, Linux Systems, Render, Vercel.</p>
+              <p className="text-sm tracking-tight text-zinc-300">FastAPI, Supabase (PostgreSQL), pgvector, REST APIs, Docker, Linux Systems, Render, Vercel.</p>
             </div>
             <div className="p-6 bg-zinc-900/20 border border-glassBorder hover:border-zinc-700 transition-colors">
               <h4 className="font-mono text-xs text-muted mb-3 uppercase">// Interfaces</h4>
